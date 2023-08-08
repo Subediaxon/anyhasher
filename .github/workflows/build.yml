@@ -58,7 +58,7 @@ jobs:
         run: cd backend && npm i
 
       - name: Lint the code
-        run: cd backend && npx tslint --init && npm run lint
+        run: cd backend && npm run lint
 
   
 
