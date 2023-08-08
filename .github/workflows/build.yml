@@ -9,5 +9,6 @@ jobs:
     name: 🛠️ Build Backend Artifact
     runs-on: ubuntu-latest
     steps:
+      - run: cd backend
       - run: npm i
       - run: npm run build
