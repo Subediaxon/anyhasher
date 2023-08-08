@@ -57,11 +57,8 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: cd backend && npm i
 
-      - name: Initialize tslint
-        run: cd backend && npx tslint --init
-         
       - name: Lint the code
-        run: cd backend && npm run lint
+        run: cd backend && npx tslint --init && npm run lint
 
   
 
